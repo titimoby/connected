@@ -8,9 +8,9 @@ minetest.register_node("connected:iotswitch", {
 	groups = {snappy=1,choppy=2,oddly_breakable_by_hand=2,flammable=3},
   on_rightclick = function (pos, node)
 		print("punch")
-    minetest.after(5, function()
+    minetest.after(1, function()
       http_api.fetch({
-        url = "http://localhost:3000/resources/feedsonoff",
+        url = "http://localhost:8088/punch",
         timeout = 1
       },
       function (res)

@@ -1,0 +1,9 @@
+{
+  "name": "connectedJS",
+  "version": "0.1.0",
+  "dependencies": {
+    "express": "^4.14.0",
+    "mqtt": "^2.0.1",
+    "ponte": "~0.0.16"
+  }
+}
