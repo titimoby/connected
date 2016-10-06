@@ -3,7 +3,7 @@ if not http_api then
    print("ERROR: in minetest.conf, this mod must be in secure.http_mods!")
 end
 
-minetest.register_node("connected:iotswitch", {
+local node = minetest.register_node("connected:iotswitch", {
 	tiles = {"textures/tutorial_decowood.png"},
 	groups = {snappy=1,choppy=2,oddly_breakable_by_hand=2,flammable=3},
   on_rightclick = function (pos, node)
@@ -17,5 +17,9 @@ minetest.register_node("connected:iotswitch", {
         print(dump(res))
       end)
     end)
-	end
+	end,
+  on_construct = function(pos)
+    -- register with rest API to the server ?
+    print(dump(pos))
+  end
 })

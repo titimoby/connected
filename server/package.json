@@ -1,0 +1,7 @@
+{
+  "name": "connectedJS",
+  "version": "0.1.0",
+  "dependencies": {
+    "mosca": "^0.29.0"
+  }
+}
