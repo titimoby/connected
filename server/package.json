@@ -1,9 +1,16 @@
 {
   "name": "connectedJS",
+  "description": "this js app is used to interact with minetest connected mod.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/titimoby/connected.git"
+  },
   "version": "0.1.0",
+  "license": "MIT",
   "dependencies": {
     "express": "^4.14.0",
+    "mosca": "^2.2.0",
     "mqtt": "^2.0.1",
-    "ponte": "~0.0.16"
+    "node-persist": "^2.0.2"
   }
 }
