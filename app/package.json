@@ -1,0 +1,17 @@
+{
+  "name": "connectedJS",
+  "description": "this js app is used to interact with minetest connected mod.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/titimoby/connected.git"
+  },
+  "version": "0.1.0",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^1.4.3"
+  }
+}
